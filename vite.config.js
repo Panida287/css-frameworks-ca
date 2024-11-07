@@ -1,12 +1,12 @@
 // vite.config.js
 import { defineConfig } from 'vite';
 import tailwindcss from 'tailwindcss';
-import postcss from 'postcss';
+import autoprefixer from 'autoprefixer';
 
 export default defineConfig({
   css: {
     postcss: {
-      plugins: [tailwindcss, postcss]
+      plugins: [tailwindcss(), autoprefixer()]
     }
   }
 });
