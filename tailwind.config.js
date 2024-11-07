@@ -2,11 +2,14 @@
 export default {
   content: [
     "./index.html",
+    "./*/index.html",
+    "./*/**/index.html",
     "./src/**/*.{js,ts,jsx,tsx,html}"
   ],
   theme: {
     screens: {
-      sm: '480px',
+      ph: '480px',
+      sm: '500px',
       md: '768px',
       lg: '976px',
       xl: '1440px'
@@ -18,8 +21,8 @@ export default {
         lightGrey: '#F1F1F1'
       },
       fontFamily: {
-        headerText: ['Poppins', 'sans-serif'],
-        pText: ['Roboto', 'sans-serif']
+        h: ['Poppins', 'sans-serif'],
+        p: ['Roboto', 'sans-serif']
       }
     }
   },
