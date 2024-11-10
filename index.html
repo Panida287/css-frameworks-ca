@@ -1,15 +1,263 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <link href="/src/css/styles.css" rel="stylesheet">
+    <link href="/src/css/styles.css" rel="stylesheet" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script type="module" src="/main.js"></script>
-    <script src="https://kit.fontawesome.com/5d32d5fe01.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/5d32d5fe01.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Home</title>
   </head>
-  <body class="bg-primary">
+  <body class="bg-lightGrey">
+    <div class="header hidden sm:flex items-center justify-between p-4 bg-white w-[90%] rounded-[16px] h-[80px] mx-auto mt-4">
+      <a href="#">
+        <div class="flex place-items-center profile">
+          <img
+            src="assets/profile-pic.jpg"
+            class="object-cover w-7 h-7 rounded-full border-[1px] border-primary"
+          />
+          <span class="flex items-center ml-2 text-xs author text-p text-text">
+            PanidaPae
+          </span>
+        </div>
+      </a>
+      <button
+      class="px-2 py-1 text-xs bg-transparent rounded-full border-[1px] border-primary text-primary hover:bg-primary hover:text-white focus:bg-primary focus:text-white"
+    >
+      ALL POSTS
+    </button>
+    <button
+      class="px-2 py-1 text-xs bg-transparent rounded-full border-[1px] border-primary text-primary hover:bg-primary hover:text-white focus:bg-primary focus:text-white"
+    >
+      FOLLOWINGS
+    </button>
+    <button
+    class="flex flex-col items-end justify-center text-xs category text-primary"
+  >
+    CATEGORIES
+    <i class="fa-solid fa-list"></i>
+  </button>
+  <button
+  class="px-2 py-1 text-xs text-white rounded-full bg-primary"
+>
+  INBOX
+</button>
+    </div>
+    <div class="sticky top-0 z-10 sm:hidden mobile-header-container bg-lightGrey">
+      <div class="flex items-center justify-between p-7 mobile-header">
+        <img src="assets/logo.png" class="w-10 logo" />
+        <button
+          class="flex flex-col items-end justify-center text-xs category text-primary"
+        >
+          CATEGORIES
+          <i class="fa-solid fa-list"></i>
+        </button>
+      </div>
 
+      <div class="flex sort-btn-container justify-evenly">
+        <button
+          class="px-2 py-1 text-xs bg-transparent rounded-full border-[1px] border-primary text-primary hover:bg-primary hover:text-white focus:bg-primary focus:text-white"
+        >
+          ALL POSTS
+        </button>
+        <button
+          class="px-2 py-1 text-xs bg-transparent rounded-full border-[1px] border-primary text-primary hover:bg-primary hover:text-white focus:bg-primary focus:text-white"
+        >
+          FOLLOWINGS
+        </button>
+
+      </div>
+
+      <h1
+        class="flex items-center justify-start text-sm newest-posts text-text text-h m-7"
+      >
+        Newest Posts
+      </h1>
+    </div>
+
+    <div class="flex flex-col max-w-[700px] m-auto overflow-y-scroll posts-container">
+      <div
+        class="flex justify-center p-2 mx-8 my-4 bg-white sm:items-start rounded-xl post-container"
+      >
+        <div class="flex items-start w-1/10 profile-pic">
+          <img
+            src="assets/profile-pic.jpg"
+            class="object-cover -mt-[75px] w-7 h-7 rounded-full border-[1px] border-primary sm:mt-1"
+          />
+        </div>
+        <div class="w-full pl-1 post-contents">
+          <div class="flex justify-between top-content">
+            <p class="flex items-center justify-start text-xs author text-text">
+              PanidaPae
+            </p>
+            <p class="text-xs italic text-gray-500 date-time font-p">
+              2 nov 2024
+            </p>
+          </div>
+          <div class="bottom-content">
+            <p class="text-xs font-semibold subject font-p text-text">
+              "New in Oslo! Looking for tips on food, friends, and hidden gems
+              🌟"
+            </p>
+            <p class="text-xs post-body subject font-p text-text">
+              Hey everyone! Just moved to Oslo last month 🌍🇳🇴 and wow, the
+              adjustment has been real! Loving the views and the fresh air, but
+              navigating the language and...
+            </p>
+          </div>
+        </div>
+      </div>
+    <div class="flex flex-col max-w-[700px] m-auto overflow-y-scroll posts-container">
+      <div
+        class="flex justify-center p-2 mx-8 my-4 bg-white sm:items-start rounded-xl post-container"
+      >
+        <div class="flex items-start w-1/10 profile-pic">
+          <img
+            src="assets/profile-pic.jpg"
+            class="object-cover -mt-[75px] w-7 h-7 rounded-full border-[1px] border-primary sm:mt-1"
+          />
+        </div>
+        <div class="w-full pl-1 post-contents">
+          <div class="flex justify-between top-content">
+            <p class="flex items-center justify-start text-xs author text-text">
+              PanidaPae
+            </p>
+            <p class="text-xs italic text-gray-500 date-time font-p">
+              2 nov 2024
+            </p>
+          </div>
+          <div class="bottom-content">
+            <p class="text-xs font-semibold subject font-p text-text">
+              "New in Oslo! Looking for tips on food, friends, and hidden gems
+              🌟"
+            </p>
+            <p class="text-xs post-body subject font-p text-text">
+              Hey everyone! Just moved to Oslo last month 🌍🇳🇴 and wow, the
+              adjustment has been real! Loving the views and the fresh air, but
+              navigating the language and...
+            </p>
+          </div>
+        </div>
+      </div>
+    <div class="flex flex-col max-w-[700px] m-auto overflow-y-scroll posts-container">
+      <div
+        class="flex justify-center p-2 mx-8 my-4 bg-white sm:items-start rounded-xl post-container"
+      >
+        <div class="flex items-start w-1/10 profile-pic">
+          <img
+            src="assets/profile-pic.jpg"
+            class="object-cover -mt-[75px] w-7 h-7 rounded-full border-[1px] border-primary sm:mt-1"
+          />
+        </div>
+        <div class="w-full pl-1 post-contents">
+          <div class="flex justify-between top-content">
+            <p class="flex items-center justify-start text-xs author text-text">
+              PanidaPae
+            </p>
+            <p class="text-xs italic text-gray-500 date-time font-p">
+              2 nov 2024
+            </p>
+          </div>
+          <div class="bottom-content">
+            <p class="text-xs font-semibold subject font-p text-text">
+              "New in Oslo! Looking for tips on food, friends, and hidden gems
+              🌟"
+            </p>
+            <p class="text-xs post-body subject font-p text-text">
+              Hey everyone! Just moved to Oslo last month 🌍🇳🇴 and wow, the
+              adjustment has been real! Loving the views and the fresh air, but
+              navigating the language and...
+            </p>
+          </div>
+        </div>
+      </div>
+    <div class="flex flex-col max-w-[700px] m-auto overflow-y-scroll posts-container">
+      <div
+        class="flex justify-center p-2 mx-8 my-4 bg-white sm:items-start rounded-xl post-container"
+      >
+        <div class="flex items-start w-1/10 profile-pic">
+          <img
+            src="assets/profile-pic.jpg"
+            class="object-cover -mt-[75px] w-7 h-7 rounded-full border-[1px] border-primary sm:mt-1"
+          />
+        </div>
+        <div class="w-full pl-1 post-contents">
+          <div class="flex justify-between top-content">
+            <p class="flex items-center justify-start text-xs author text-text">
+              PanidaPae
+            </p>
+            <p class="text-xs italic text-gray-500 date-time font-p">
+              2 nov 2024
+            </p>
+          </div>
+          <div class="bottom-content">
+            <p class="text-xs font-semibold subject font-p text-text">
+              "New in Oslo! Looking for tips on food, friends, and hidden gems
+              🌟"
+            </p>
+            <p class="text-xs post-body subject font-p text-text">
+              Hey everyone! Just moved to Oslo last month 🌍🇳🇴 and wow, the
+              adjustment has been real! Loving the views and the fresh air, but
+              navigating the language and...
+            </p>
+          </div>
+        </div>
+      </div>
+    <div class="flex flex-col max-w-[700px] m-auto overflow-y-scroll posts-container">
+      <div
+        class="flex justify-center p-2 mx-8 my-4 bg-white sm:items-start rounded-xl post-container"
+      >
+        <div class="flex items-start w-1/10 profile-pic">
+          <img
+            src="assets/profile-pic.jpg"
+            class="object-cover -mt-[75px] w-7 h-7 rounded-full border-[1px] border-primary sm:mt-1"
+          />
+        </div>
+        <div class="w-full pl-1 post-contents">
+          <div class="flex justify-between top-content">
+            <p class="flex items-center justify-start text-xs author text-text">
+              PanidaPae
+            </p>
+            <p class="text-xs italic text-gray-500 date-time font-p">
+              2 nov 2024
+            </p>
+          </div>
+          <div class="bottom-content">
+            <p class="text-xs font-semibold subject font-p text-text">
+              "New in Oslo! Looking for tips on food, friends, and hidden gems
+              🌟"
+            </p>
+            <p class="text-xs post-body subject font-p text-text">
+              Hey everyone! Just moved to Oslo last month 🌍🇳🇴 and wow, the
+              adjustment has been real! Loving the views and the fresh air, but
+              navigating the language and...
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="sm:hidden w-[95%] flex justify-evenly items-center border-primary border-[1px] m-auto rounded-full mobile-nav-bar h-[60px] bg-white sticky bottom-[20px]"
+    >
+      <a href="#">
+        <i class="text-xl fa-solid fa-house text-primary"></i>
+      </a>
+      <a href="#">
+        <i class="text-xl fa-solid fa-magnifying-glass text-primary"></i>
+      </a>
+      <a href="#">
+        <i class="text-xl fa-solid fa-plus text-primary"></i>
+      </a>
+      <a href="#">
+        <img
+          src="assets/profile-pic.jpg"
+          class="object-cover w-7 h-7 rounded-full border-[1px] border-primary"
+        />
+      </a>
+    </div>
   </body>
 </html>
