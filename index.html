@@ -16,7 +16,7 @@
     <div
       class="header hidden sm:flex items-center justify-between p-4 bg-white w-[90%] rounded-[16px] h-[80px] mx-auto mt-4"
     >
-      <a href="#">
+      <a href="/profile/index.html">
         <div class="flex profile place-items-center">
           <img
             src="assets/profile-pic.jpg"
@@ -76,7 +76,14 @@
         Newest Posts
       </h1>
     </div>
-
+    <div class="items-center justify-center hidden m-2 sm:flex search-bar">
+      <input
+      type="text"
+      placeholder="Search..."
+      class="w-[200px] h-[30px] px-4 py-2 bg-white border border-gray-300 rounded-full focus:outline-none focus:ring focus:border-blue-300"
+    />
+    <i class="absolute left-3 top-2.5 text-gray-400 fa fa-search"></i>
+    </div>
     <div
       class="flex flex-col max-w-[700px] m-auto overflow-y-scroll posts-container"
     >
