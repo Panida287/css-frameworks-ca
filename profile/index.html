@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link href="/src/css/styles.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script type="module" src="/main.js"></script>
+    <script
+      src="https://kit.fontawesome.com/5d32d5fe01.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Home</title>
+  </head>
+  <body class="flex flex-col items-center bg-lightGrey">
+    <div id="hamburger-menu">
+      <button
+        id="hamburger-icon"
+        class="absolute z-10 w-10 h-10 rounded-full md:hidden right-[20px] top-[20px] bg-primary"
+      >
+        <i class="text-white fa-solid fa-bars"></i>
+      </button>
+      <div
+        id="mobile-menu"
+        class="hidden flex-col gap-4 right-0 absolute w-[30%] bg-primary rounded-bl-[14px] pt-[80px] pl-2"
+      >
+        <a href="#" class="text-white font-p"> Edit Profile </a>
+        <a href="#" class="text-white font-p"> Inbox </a>
+        <a href="#" class="pb-8 text-white font-p"> Notification </a>
+      </div>
+    </div>
+
+    <div
+      class="flex items-center cover-photo-container cover -z-1 h-[200px] overflow-hidden border-b-4 border-primary"
+    >
+      <img src="../assets/cover-photo.avif" />
+    </div>
+    <div class="flex w-screen top-section max-w-[700px]">
+      <div class="flex justify-center profile-container md:w-[50%]">
+        <img
+          src="../assets/profile-pic.jpg"
+          class="z-10 absolute object-cover w-[150px] h-[150px] rounded-full border-4 border-primary -mt-[75px]"
+        />
+        <div
+          class="flex justify-end w-screen pt-[20px] pr-[20px] button-container"
+        >
+          <button
+            id="follow-btn"
+            class="px-2 py-1 md:mb-3 text-xs bg-transparent rounded-full border-[1px] border-primary text-primary hover:bg-primary hover:text-white focus:bg-primary focus:text-white"
+          >
+            FOLLOW
+          </button>
+        </div>
+      </div>
+      <div
+        class="items-end justify-between hidden w-full px-3 pb-3 bg-white menu md:flex rounded-b-[14px]"
+      >
+        <button
+          id="home-btn"
+          class="px-2 py-1 text-xs rounded-full border-[1px] text-white bg-primary"
+        >
+          HOME
+        </button>
+        <button
+          id="edit-profile-btn"
+          class="px-2 py-1 text-xs rounded-full border-[1px] text-white bg-primary"
+        >
+          Edit Profile
+        </button>
+        <button
+          id="inbox-btn"
+          class="px-2 py-1 text-xs rounded-full border-[1px] text-white bg-primary"
+        >
+          <i class="fa-regular fa-envelope"></i>
+        </button>
+        <button
+          id="new-post"
+          class="px-2 py-1 text-xs rounded-full border-[1px] text-white bg-primary"
+        >
+          Post new
+        </button>
+      </div>
+    </div>
+
+    <div
+      class="flex flex-col items-center justify-center mt-10 profile-detail max-w-[700px]"
+    >
+      <h1 class="text-lg font-bold username text-header">PanidaPae</h1>
+      <p class="m-4 text-sm italic font-thin bio font-p">
+        An expat / traveler / foodie
+      </p>
+    </div>
+
+    <div class="flex items-center w-screen justify-evenly numbers">
+      <div class="flex flex-col items-center justify-center number-of-posts">
+        <h2 class="text-xl font-semibold">59</h2>
+        <p class="text-xs">Posts</p>
+      </div>
+      <div
+        class="flex flex-col items-center justify-center number-of-followers"
+      >
+        <h2 class="text-xl font-semibold">14.5K</h2>
+        <p class="text-xs">Followers</p>
+      </div>
+      <div
+        class="flex flex-col items-center justify-center number-of-following"
+      >
+        <h2 class="text-xl font-semibold">800</h2>
+        <p class="text-xs">Following</p>
+      </div>
+    </div>
+
+    <h1 class="flex justify-start w-screen pl-[32px] max-w-[700px] mt-4">
+      Recent Posts
+    </h1>
+
+    <div
+      class="flex flex-col max-w-[700px] mx-auto overflow-y-scroll posts-container"
+    >
+      <!-- Post Container Start -->
+      <div
+        class="flex justify-center p-2 mx-8 my-4 bg-white sm:items-start rounded-xl post-container"
+      >
+        <div class="flex items-start w-1/10 profile-pic">
+          <img
+            src="../assets/profile-pic.jpg"
+            class="object-cover w-7 h-7 rounded-full border-[1px] border-primary sm:mt-1"
+          />
+        </div>
+        <div class="w-full pl-1 post-contents">
+          <div class="flex justify-between top-content">
+            <p class="flex items-center justify-start text-xs author text-text">
+              PanidaPae
+            </p>
+            <p class="text-xs italic text-gray-500 date-time font-p">
+              2 nov 2024
+            </p>
+          </div>
+          <div class="bottom-content">
+            <p class="text-xs font-semibold subject font-p text-text">
+              "New in Oslo! Looking for tips on food, friends, and hidden gems
+              🌟"
+            </p>
+            <p class="text-xs post-body subject font-p text-text">
+              Hey everyone! Just moved to Oslo last month 🌍🇳🇴 and wow, the
+              adjustment has been real! Loving the views and the fresh air, but
+              navigating the language and...
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Repeat Post Containers as needed -->
+      <div
+        class="flex justify-center p-2 mx-8 my-4 bg-white sm:items-start rounded-xl post-container"
+      >
+        <div class="flex items-start w-1/10 profile-pic">
+          <img
+            src="../assets/profile-pic.jpg"
+            class="object-cover w-7 h-7 rounded-full border-[1px] border-primary sm:mt-1"
+          />
+        </div>
+        <div class="w-full pl-1 post-contents">
+          <div class="flex justify-between top-content">
+            <p class="flex items-center justify-start text-xs author text-text">
+              PanidaPae
+            </p>
+            <p class="text-xs italic text-gray-500 date-time font-p">
+              2 nov 2024
+            </p>
+          </div>
+          <div class="bottom-content">
+            <p class="text-xs font-semibold subject font-p text-text">
+              "New in Oslo! Looking for tips on food, friends, and hidden gems
+              🌟"
+            </p>
+            <p class="text-xs post-body subject font-p text-text">
+              Hey everyone! Just moved to Oslo last month 🌍🇳🇴 and wow, the
+              adjustment has been real! Loving the views and the fresh air, but
+              navigating the language and...
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Additional Post Containers -->
+      <div
+        class="flex justify-center p-2 mx-8 my-4 bg-white sm:items-start rounded-xl post-container"
+      >
+        <div class="flex items-start w-1/10 profile-pic">
+          <img
+            src="../assets/profile-pic.jpg"
+            class="object-cover w-7 h-7 rounded-full border-[1px] border-primary sm:mt-1"
+          />
+        </div>
+        <div class="w-full pl-1 post-contents">
+          <div class="flex justify-between top-content">
+            <p class="flex items-center justify-start text-xs author text-text">
+              PanidaPae
+            </p>
+            <p class="text-xs italic text-gray-500 date-time font-p">
+              2 nov 2024
+            </p>
+          </div>
+          <div class="bottom-content">
+            <p class="text-xs font-semibold subject font-p text-text">
+              "New in Oslo! Looking for tips on food, friends, and hidden gems
+              🌟"
+            </p>
+            <p class="text-xs post-body subject font-p text-text">
+              Hey everyone! Just moved to Oslo last month 🌍🇳🇴 and wow, the
+              adjustment has been real! Loving the views and the fresh air, but
+              navigating the language and...
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="md:hidden w-[95%] m-auto flex justify-evenly items-center border-primary border-[1px] rounded-full mobile-nav-bar h-[60px] bg-white fixed bottom-[20px]"
+    >
+      <a href="#"><i class="text-xl fa-solid fa-house text-primary"></i></a>
+      <a href="#"
+        ><i class="text-xl fa-solid fa-magnifying-glass text-primary"></i
+      ></a>
+      <a href="#"><i class="text-xl fa-solid fa-plus text-primary"></i></a>
+      <a href="#">
+        <img
+          src="../assets/profile-pic.jpg"
+          class="object-cover w-7 h-7 rounded-full border-[1px] border-primary"
+        />
+      </a>
+    </div>
+  </body>
+</html>
