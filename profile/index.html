@@ -27,6 +27,9 @@
         <a href="#" class="text-white font-p"> Edit Profile </a>
         <a href="#" class="text-white font-p"> Inbox </a>
         <a href="#" class="pb-8 text-white font-p"> Notification </a>
+        <a href="../auth/login/index.html" class="pb-8 text-white font-p">
+          Logout
+        </a>
       </div>
     </div>
 
@@ -55,12 +58,13 @@
       <div
         class="items-end justify-between hidden w-full px-3 pb-3 bg-white menu md:flex rounded-b-[14px]"
       >
-        <button
+        <a
+          href="../index.html"
           id="home-btn"
           class="px-2 py-1 text-xs rounded-full border-[1px] text-white bg-primary"
         >
           HOME
-        </button>
+        </a>
         <button
           id="edit-profile-btn"
           class="px-2 py-1 text-xs rounded-full border-[1px] text-white bg-primary"
@@ -68,17 +72,24 @@
           Edit Profile
         </button>
         <button
-          id="inbox-btn"
-          class="px-2 py-1 text-xs rounded-full border-[1px] text-white bg-primary"
-        >
-          <i class="fa-regular fa-envelope"></i>
-        </button>
-        <button
           id="new-post"
           class="px-2 py-1 text-xs rounded-full border-[1px] text-white bg-primary"
         >
           Post new
         </button>
+        <button
+          id="inbox-btn"
+          class="px-2 py-1 text-xs rounded-full border-[1px] text-white bg-primary"
+        >
+          <i class="fa-regular fa-envelope"></i>
+        </button>
+        <a
+          href="../auth/login/index.html"
+          id="logout"
+          class="px-2 py-1 text-xs rounded-full border-[1px] text-white bg-primary"
+        >
+          <i class="fa-solid fa-right-from-bracket"></i>
+        </a>
       </div>
     </div>
 
@@ -151,39 +162,6 @@
       </div>
 
       <!-- Repeat Post Containers as needed -->
-      <div
-        class="flex justify-center p-2 mx-8 my-4 bg-white sm:items-start rounded-xl post-container"
-      >
-        <div class="flex items-start w-1/10 profile-pic">
-          <img
-            src="../assets/profile-pic.jpg"
-            class="object-cover w-7 h-7 rounded-full border-[1px] border-primary sm:mt-1"
-          />
-        </div>
-        <div class="w-full pl-1 post-contents">
-          <div class="flex justify-between top-content">
-            <p class="flex items-center justify-start text-xs author text-text">
-              PanidaPae
-            </p>
-            <p class="text-xs italic text-gray-500 date-time font-p">
-              2 nov 2024
-            </p>
-          </div>
-          <div class="bottom-content">
-            <p class="text-xs font-semibold subject font-p text-text">
-              "New in Oslo! Looking for tips on food, friends, and hidden gems
-              🌟"
-            </p>
-            <p class="text-xs post-body subject font-p text-text">
-              Hey everyone! Just moved to Oslo last month 🌍🇳🇴 and wow, the
-              adjustment has been real! Loving the views and the fresh air, but
-              navigating the language and...
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Additional Post Containers -->
       <div
         class="flex justify-center p-2 mx-8 my-4 bg-white sm:items-start rounded-xl post-container"
       >
